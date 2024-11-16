@@ -1,4 +1,7 @@
-### Fatiamento ###
+                    ########################
+                    ###### Fatiamento ######
+                    ########################
+
 frase = 'Curso em Video Python'
 print(frase[9]) # Maneira mais simples de fatiar
 
@@ -20,7 +23,10 @@ print(frase[15:]) # Imprime: Python
 # Significa: Vai do 9 ao final, pulando a cada 3
 print(frase[9::3])
 
-### Análise ###
+                    #####################
+                    ###### Análise ######
+                    #####################
+
 # Comprimento
 print(len(frase))
 
@@ -40,7 +46,10 @@ print(frase.find('Android'))
 # Verifica se existe a palavra Curso em frase: Retorna True
 print('Curso' in frase)
 
-### Transformação ###
+                    ###########################
+                    ###### Transformação ######
+                    ###########################
+
 # Replace
 android = frase.replace('Python', 'Android') # Faz o replace e precisa adicionar a uma nova variável
 print(android) # Essa variável exibe Android no lugar de Python
@@ -55,21 +64,28 @@ print(frase.lower())
 # Capitalize - Deixa todas as letras minúsculas, menos a primeira, que fica maiúscula
 print(frase.capitalize())
 
-# Title
+# Title: Pega todas as primeiras letras de cada palavra de uma frase e torna maiúscula
 title = frase.lower() # Transformo todas as letras em minúsculas e atribuo a variável title
 print(title.title()) # O title deixa a primeira letra de cada palavra dentro da frase como maiúscula
 
-# Strip
+# Strip: Remove os espaços inúteis
 frase = '   Aprenda Python  '
 print(frase.strip()) # Remove todos os espaços inúteis
 print(frase.rstrip()) # Remove todos os espaços inúteis do lado direito
 print(frase.lstrip()) # Remove todos os espaços inúteis do lado esquerdo
 
-### Divisão ###
-# Split: Divide uma string em uma lista
+                    #####################
+                    ###### Divisão ######
+                    #####################
+
+# Split: Divide uma string em uma lista - O que define cada divisão é o espaço
 print(frase.split()) # Fica ['Aprenda',  'Python']
 
-### Junção ###
+                    ####################
+                    ###### Junção ######
+                    ####################
+
 # Join: Une uma lista conforme o caractere fornecido.
 # Nesse caso, ['Aprenda', 'Python'] fica Aprenda-Python
 print('-'.join(frase.split()))
+print(' uso o que eu quiser '.join(frase.split())) # Fica: Aprenda uso o que eu quiser Python
