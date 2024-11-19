@@ -9,5 +9,3 @@ print(f'Meu nome é {name} e eu tenho {age} ano(s) de idade.')
 
 age, name = (47, 'Urian')
 print(f'Meu nome é {name} e eu tenho {age} ano(s) de idade.')
-
-# Desafio 001: Crie um programa que escreva "Olá, Mundo!" na tela
